@@ -1,0 +1,55 @@
+/* .coin-flex {
+  display: flex;
+  justify-self: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0rem 1.5rem;
+}
+/* @media only screen and (max-width: 650px) {
+  .select-info {
+    display: none;
+  }
+} */
+/* @media only screen and (max-width: 800px) {
+  .select-flex {
+    justify-content: space-between;
+    gap: 0rem;
+    margin: 1.5rem 0.5rem;
+  }
+
+  .select-flex p {
+    display: none;
+  }
+
+  .select-coin {
+    width: 7rem;
+  }
+} */
+.select-flex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1.5rem 3rem;
+}
+
+.select-coin {
+  width: 8rem;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .select-flex {
+    justify-content: space-between;
+    gap: 10px;
+    margin: 1.5rem 0.5rem;
+  }
+
+  .select-flex p {
+    display: none;
+  }
+
+  .select-coin {
+    width: 6rem;
+  }
+}
