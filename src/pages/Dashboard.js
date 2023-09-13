@@ -32,6 +32,7 @@ const Dashboard = () => {
     getData();
   }, []);
   const getData = async () => {
+    setIsLoading(true);
     const myCoins = await get100Coins();
     if (myCoins) {
       setCoin(myCoins);
