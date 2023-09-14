@@ -41,6 +41,8 @@ export default function ShareModal() {
     <div>
       <Button onClick={handleOpen} text="Share App" outlined={true} />
       <Modal
+        aria-labelledby="transition-modal-title"
+        aria-describedby="transition-modal-description"
         open={open}
         onClose={handleClose}
         closeAfterTransition
@@ -50,9 +52,10 @@ export default function ShareModal() {
             timeout: 500,
           },
         }}
+        className="modal-div"
       >
         <Fade in={open}>
-          <div className="modal-div">
+          <div className="modal-items">
             <FacebookShareButton url={"https://www.facebook.com/login/"}>
               <FacebookIcon />
             </FacebookShareButton>

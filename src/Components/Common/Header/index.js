@@ -66,7 +66,7 @@ const Header = () => {
         </Link>
       </div>
       <div className="mobile-drawer">
-        <TemporaryDrawer />
+        <TemporaryDrawer darkMode={darkMode} changeMode={changeMode} />
       </div>
     </div>
   );

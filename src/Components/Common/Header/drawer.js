@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import Drawer from "@mui/material/Drawer";
 import MenuIcon from "@mui/icons-material/Menu";
-import { IconButton } from "@mui/material";
+import { IconButton, Switch } from "@mui/material";
 import { Link } from "react-router-dom";
 
-export default function TemporaryDrawer() {
+export default function TemporaryDrawer({ darkMode, changeMode }) {
   const [open, setOpen] = useState(false);
   return (
     <div>
@@ -25,6 +25,12 @@ export default function TemporaryDrawer() {
           <Link to="/dashboard">
             <p className="link">Dashboard</p>
           </Link>
+          <Switch
+            checked={darkMode}
+            onClick={() => {
+              changeMode();
+            }}
+          />
         </div>
       </Drawer>
     </div>
