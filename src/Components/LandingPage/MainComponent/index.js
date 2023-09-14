@@ -5,7 +5,8 @@ import iphone from "../../../assets/iphone.png";
 import gradient from "../../../assets/gradient.png";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { RWebShare } from "react-web-share";
+import ShareModal from "../../Dashboard/Share";
+// import { RWebShare } from "react-web-share";
 const Maincomponent = () => {
   return (
     <div className="flex-info">
@@ -44,16 +45,17 @@ const Maincomponent = () => {
           <Link to={"/dashboard"}>
             <Button text={"Dashboard"} outlined={false} />
           </Link>
-          <RWebShare
+          {/* <RWebShare
             data={{
               text: "Crypto Dashboard made using React JS.",
               url: "https://crypto-dashboard-akashm.netlify.app",
               title: "CryptoDashboard.",
             }}
             onClick={() => console.log("shared successfully!")}
-          >
-            <Button text="Share App" outlined={true} />
-          </RWebShare>
+          > */}
+          {/* <Button text="Share App" outlined={true} /> */}
+          <ShareModal />
+          {/* </RWebShare> */}
         </motion.div>
       </div>
 
