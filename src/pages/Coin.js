@@ -26,12 +26,14 @@ const Coin = () => {
     }
   }, [id]);
 
+  // fetching 100 coins data
   async function getData() {
     const data = await getCoinData(id);
     if (data) {
       coinObject(setCoinData, data);
       const prices = await getCoinPrices(id, days, priceType);
       if (prices.length > 0) {
+        // to set the chart data
         settingChartData(setChartData, prices);
         setIsLoading(false);
       }

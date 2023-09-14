@@ -32,6 +32,9 @@
   gap: 1.5rem;
   margin: 1.5rem 3rem;
 }
+.select-info {
+  color: var(--white);
+}
 
 .select-coin {
   width: 8rem;

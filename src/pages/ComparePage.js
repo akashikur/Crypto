@@ -31,6 +31,7 @@ const ComparePage = () => {
     settingChartData(setChartData, prices1, prices2);
     setIsLoading(false);
   }
+
   const handlePriceTypeChange = async (event, newType) => {
     setIsLoading(true);
     setPriceType(newType);
@@ -43,6 +44,7 @@ const ComparePage = () => {
   useEffect(() => {
     getData();
   }, []);
+
   async function getData() {
     setIsLoading(true);
     const data1 = await getCoinData(crypto1);
