@@ -4,6 +4,7 @@ import TabComponents from "../Components/Dashboard/Tabs";
 import { get100Coins } from "../functions/get100Coins";
 import Loader from "../Components/Common/Loader";
 import Button from "../Components/Common/Button";
+import { Link } from "react-router-dom";
 const WatchList = () => {
   const coins = localStorage.getItem("watchlist");
   const [watchLits, setWatchList] = useState([]);
@@ -40,9 +41,9 @@ const WatchList = () => {
                 No Items in the Watchlist
               </h1>
               <div style={{ display: "flex", justifyContent: "center" }}>
-                <a href="/dashboard">
+                <Link to="/dashboard">
                   <Button text={"Dashboard"} outlined={false} />
-                </a>
+                </Link>
               </div>
             </div>
           ) : (
