@@ -29,7 +29,7 @@ const LineChart = ({ chartData, priceType, multiAxis }) => {
           },
         },
       },
-      crypto2: multiAxis && {
+      crypto2: {
         type: "linear",
         display: true,
         position: "right",

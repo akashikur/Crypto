@@ -35,14 +35,14 @@ export const settingChartData = (setChartData, prices1, prices2) => {
       datasets: [
         {
           data: prices1.map((price) => price[1]),
-          borderWidth: 1,
+          borderWidth: 2,
           fill: true,
           tension: 0.25,
           backgroundColor: "rgba(58,128,233,0.1)",
           // prices ? "transparent" :
           borderColor: "#3a80e9",
           pointRadius: 0,
-          yAxisID: "crypto 1",
+          yAxisID: "crypto1",
         },
       ],
     });
